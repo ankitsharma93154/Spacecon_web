@@ -1,0 +1,124 @@
+/* .parallax {
+  background-image: url("../public/space_image1.jpg");
+  height: 1500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
+
+/*Navbar*/
+.navbar {
+  position: fixed;
+  top: 30;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  background: rgba(255, 255, 255, 0.1); /* Glass effect */
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #e8f9fd; /* Soft white */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #21e6c1; /* Neon Cyan */
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #9d00ff; /* Deep Purple */
+}
+
+/*fonts*/
+body {
+  font-family: "Lato", sans-serif;
+}
+
+h1,
+h2 {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 700;
+}
+
+button {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+.special-text {
+  font-family: "Protest Guerrilla", sans-serif; /* Use only for fun elements */
+}
+
+body {
+  background-image: url("../public/space_image1.jpg");
+  height: 1200px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.glass {
+  background: rgba(255, 255, 255, 0.1); /* Transparent white */
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px); /* This creates the frosted glass effect */
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* .neu-button {
+  background: #1E1E1E; 
+  border-radius: 12px;
+  box-shadow: 5px 5px 10px #0f0f0f, -5px -5px 10px #2e2e2e; 
+  padding: 15px 30px;
+  color: white;
+  border: none;
+  cursor: pointer;
+} */
+
+.glass-card {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 20px;
+  background: rgba(255, 255, 255, 0.1); /* Transparent white */
+  border-radius: 15px;
+  padding: 20px;
+  /* width: 300px; */
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(12px); /* Frosted Glass Effect */
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+.simple-footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Slight transparency */
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 14px;
+}
