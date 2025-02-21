@@ -22,7 +22,8 @@
 .about {
   text-align: center;
   padding: 50px 20px;
-  background: url("../public/about.jpg") no-repeat center center/cover;
+  background: black;
+  max-width: 100%;
   color: #fff;
   border-radius: 10px;
 }
@@ -52,9 +53,10 @@
 .contact {
   text-align: center;
   padding: 50px 20px;
-  background: url("../public/contact.jpg") no-repeat center center/cover;
   color: #fff;
   border-radius: 10px;
+  background: black;
+  max-width: 100%;
 }
 
 .contact h2 {
@@ -364,7 +366,7 @@
   padding: 20px;
   background: url("../public/homepage.jpg") no-repeat center center/cover;
   position: relative;
-  color: white;
+  color: black;
 }
 
 .home h1 {
@@ -386,9 +388,9 @@
   padding: 12px 24px;
   font-size: 1.2rem;
   font-weight: bold;
-  color: white;
-  background: linear-gradient(135deg, #ff9d23, #c14600);
-  border: none;
+  color: black;
+  background: lightblue;
+  border: 3px solid blue;
   border-radius: 50px;
   text-decoration: none;
   transition: all 0.3s ease-in-out;
