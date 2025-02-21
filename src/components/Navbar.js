@@ -37,7 +37,7 @@ const Navbar = ({ openCart }) => {
   }, []);
 
   return (
-    <nav className="navbar">
+    <nav className="navbar" href="#home">
       <div className="logo">🚀 Space Merch</div>
 
       {/* Hamburger Menu (Mobile) */}

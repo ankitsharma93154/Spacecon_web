@@ -10,7 +10,9 @@ const Contact = () => {
         <input type="text" placeholder="Your Name" required />
         <input type="email" placeholder="Your Email" required />
         <textarea placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message 🚀</button>
+        <button type="submit" className="contact-btn">
+          Send Message 🚀
+        </button>
       </form>
     </section>
   );

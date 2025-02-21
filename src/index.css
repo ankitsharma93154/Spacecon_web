@@ -1,54 +1,166 @@
-/* .parallax {
-  background-image: url("../public/space_image1.jpg");
-  height: 1500px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-} */
+.home {
+  color: #00bfff; /* Deep Sky Blue for a vibrant yet cosmic feel */
+  text-shadow: 3px 3px 15px rgba(0, 191, 255, 0.9),
+    0px 0px 10px rgba(0, 191, 255, 0.8);
+  font-weight: bold;
+}
+.product h3 {
+  color: black; /* Deep Sky Blue for a vibrant yet cosmic feel */
+  text-shadow: 3px 3px 15px rgba(0, 191, 255, 0.9),
+    0px 0px 10px rgba(0, 191, 255, 0.8);
+  font-weight: bold;
+}
+
+.products h2 {
+  color: white; /* Deep Sky Blue for a vibrant yet cosmic feel */
+  text-shadow: 3px 3px 15px rgba(0, 191, 255, 0.9),
+    0px 0px 10px rgba(0, 191, 255, 0.8);
+  font-weight: bold;
+}
+
+/*about*/
+.about {
+  text-align: center;
+  padding: 50px 20px;
+  background: url("../public/about.jpg") no-repeat center center/cover;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.about h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #ff9d23;
+}
+
+.about p {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  opacity: 0.9;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+.highlight {
+  color: #ff9d23;
+  font-weight: bold;
+}
+
+/*contact*/
+.contact {
+  text-align: center;
+  padding: 50px 20px;
+  background: url("../public/contact.jpg") no-repeat center center/cover;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.contact h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #ff9d23;
+}
+
+.contact p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  opacity: 0.8;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  background: #0f3460;
+  color: white;
+  outline: none;
+}
+
+.contact-form textarea {
+  resize: none;
+  height: 120px;
+}
+
+.contact-btn {
+  background: #ff9d23;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.contact-btn:hover {
+  background: #c14600;
+}
+
 /*Product*/
 .products {
+  padding: 10px 20px;
   text-align: center;
-  padding: 4rem 2rem;
+  background: url("../public/shop.jpg") no-repeat center center/cover;
+  color: #ffffff;
+}
+
+.products h2 {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+  text-transform: uppercase;
 }
 
 .product-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
+  justify-content: center;
+  max-width: 1200px;
+  margin: auto;
 }
 
 .product {
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  padding: 15px;
+  background: white;
   border-radius: 10px;
-  text-align: center;
-  width: 200px;
+  padding: 15px;
   cursor: pointer;
-  transition: transform 0.2s ease-in-out;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .product:hover {
-  transform: scale(1.05);
+  transform: translateY(-5px);
+  box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.2);
 }
 
 .product img {
   width: 100%;
+  height: 300px;
+  object-fit: cover;
   border-radius: 10px;
 }
 
 .product h3 {
   margin-top: 10px;
   font-size: 1.2rem;
-  color: white;
 }
 
 .product p {
   font-size: 1rem;
-  color: #ff6600;
   font-weight: bold;
+  color: #ff9d23;
 }
 
 /*ProductDetail*/
@@ -62,6 +174,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 1000;
 }
 
 .modal-content {
@@ -70,7 +183,7 @@
   padding: 2rem;
   border-radius: 15px;
   text-align: center;
-  width: 300px;
+  width: 350px;
   position: relative;
 }
 
@@ -165,7 +278,7 @@
 /*Navbar*/
 .navbar {
   position: fixed; /* Sticks to top */
-  top: 20px;
+  top: 10px;
   left: 50%;
   margin-bottom: 40px;
   transform: translateX(-50%);
@@ -174,7 +287,7 @@
   background: rgba(255, 255, 255, 0.1); /* Transparent white */
   backdrop-filter: blur(10px); /* Glassmorphic Blur */
   border-radius: 12px;
-  padding: 12px 18px;
+  padding: 10px 15px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -249,32 +362,20 @@
   align-items: center;
   text-align: center;
   padding: 20px;
-  background: url("../public/space_image1.jpg") no-repeat center center/cover;
+  background: url("../public/homepage.jpg") no-repeat center center/cover;
   position: relative;
   color: white;
 }
 
-.home::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  backdrop-filter: blur(10px);
-  background: rgba(0, 0, 0, 0.4);
-  z-index: 1;
-}
-
 .home h1 {
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-weight: bold;
   z-index: 2;
-  margin-bottom: 15px;
+  margin: 20px;
 }
 
 .home p {
-  font-size: 1.5rem;
+  font-size: 2rem;
   max-width: 600px;
   z-index: 2;
 }

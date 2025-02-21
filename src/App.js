@@ -5,7 +5,6 @@ import Products from "./components/Products";
 import ProductDetail from "./components/ProductDetail";
 import Cart from "./components/Cart";
 import Footer from "./components/Footer";
-import Shop from "./components/shop";
 import About from "./components/about";
 import Contact from "./components/contact";
 
@@ -33,7 +32,6 @@ const App = () => {
       {cartOpen && (
         <Cart cartItems={cartItems} closeCart={() => setCartOpen(false)} />
       )}
-      <Shop addToCart={addToCart} />
       <About />
       <Contact />
       <Footer />
